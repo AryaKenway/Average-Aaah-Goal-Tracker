@@ -10,11 +10,11 @@ A minimal goal-tracking web app for practicing Git collaboration.
 ### Team
 | Name | ID | Role |
 |------|----|------|
-| Arya Acharya | 2260346 | Scrum Master |
-| Sumeet Bafna | 2260450 | Developer |
-| Akkshith Reddy | 2260443 | Developer |
-| Nischay Chhetri | 2260405 | Product Owner |
-| Ayush Paudel | 2260308 | Tester |
+| Arya Acharya | 2260346 | Scrum Master and Data Analyzer |
+| Sumeet Bafna | 2260450 | Frontend Developer and Software Tester |
+| Akkshith Reddy | 2260443 | Backend Developer and Database Integrator |
+| Nischay Chhetri | 2260405 | Product Owner and Docker Master  |
+| Ayush Paudel | 2260308 | Frontend Developer and Software Tester |
 
 ### Branching Strategy
 - `main` – stable branch (protected)
