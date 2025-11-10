@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo:6
+    container_name: gt_mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    container_name: gt_backend
+    restart: unless-stopped
+    env_file:
+      - ./Backend/.env
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+
+  # OPTIONAL: frontend dev server (if frontend uses Vite/CRA)
+  frontend:
+    image: node:18
+    container_name: gt_frontend_dev
+    working_dir: /app
+    volumes:
+      - ./Frontend:/app
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:
