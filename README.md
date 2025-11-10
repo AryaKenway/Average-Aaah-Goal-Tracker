@@ -14,7 +14,7 @@ A minimal goal-tracking web app for practicing Git collaboration.
 | Sumeet Bafna | 2260450 | Frontend Developer and Software Tester |
 | Akkshith Reddy | 2260443 | Backend Developer and Database Integrator |
 | Nischay Chhetri | 2260405 | Product Owner and Docker Master  |
-| Ayush Paudel | 2260308 | Frontend Developer and Software Tester |
+| Aayush Paudel | 2260308 | Frontend Developer|
 
 ### Branching Strategy
 - `main` – stable branch (protected)
