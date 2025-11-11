@@ -57,32 +57,38 @@
 .goal-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: #f6f6f6;
-  padding: 10px 14px;
+  background: #f8f8f8;
+  margin: 8px 0;
+  padding: 10px 12px;
   border-radius: 8px;
-  margin-bottom: 8px;
-  transition: 0.2s;
+  transition: background 0.2s;
 }
-
 .goal-item:hover {
-  background: #eaeaff;
+  background: #ececec;
+}
+.goal-checkbox {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
 }
 
-.goal-checkbox {
-  accent-color: #646cff;
-}
 
 .goal-text {
-  font-size: 1rem;
+  font-size: 1.1em;
+  transition: color 0.2s, text-decoration 0.2s;
 }
-
 .goal-text.completed {
   text-decoration: line-through;
-  color: #777;
+  color: gray;
+  opacity: 0.7;
 }
-
 .empty-text {
   color: #999;
   font-style: italic;
+}
+.goal-text.done {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
 }

@@ -5,13 +5,11 @@ export default function GoalItem({ goal, onToggle }) {
     <div className="goal-item">
       <input
         type="checkbox"
-        checked={!!goal.completed}
+        checked={!!goal.done}
         onChange={() => onToggle(goal._id)}
         className="goal-checkbox"
       />
-      <span
-        className={`goal-text ${goal.completed ? 'completed' : ''}`}
-      >
+      <span className={`goal-text ${goal.done ? 'completed' : ''}`}>
         {goal.text}
       </span>
     </div>
