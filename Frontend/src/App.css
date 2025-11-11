@@ -1,0 +1,94 @@
+.app-container {
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 500px;
+  background: #ffffff;
+  color: #333;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.app-title {
+  margin-bottom: 1.5rem;
+  color: #3b3b3b;
+}
+
+.goal-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.goal-input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.goal-input:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 4px rgba(100,108,255,0.4);
+}
+
+.goal-button {
+  padding: 0.8rem 1.2rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.goal-button:hover {
+  background-color: #4f54d7;
+}
+
+.goal-list {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.goal-item {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.goal-item:hover {
+  background: #ececec;
+}
+.goal-checkbox {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+
+.goal-text {
+  font-size: 1.1em;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+.goal-text.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+.empty-text {
+  color: #999;
+  font-style: italic;
+}
+.goal-text.done {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
